@@ -1,4 +1,4 @@
-import {App} from './App.jsx'
+import ProductItem from "./ProductItem.jsx"
 
 function ProductList({products}) {
     return (

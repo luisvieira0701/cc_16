@@ -10,11 +10,16 @@ const products = [
   {id: 5, name: 'Tech Glasses', price: 1000, description: 'Apple Glasses',}
 ]
 function App() {
+  const [products, setProducts] = useState(products)
+
+  const handleAddProduct = (newProduct) => {
+    setProducts([...products, newProduct])
+  }
   return (
     <>
       <ProductList products={products}/>
       <br/>
-      <AddProductForm/>
+      <AddProductForm onAddProduct={handleAddProduct}/>
     </>
   )
 }
