@@ -1,5 +1,6 @@
 import { useState } from 'react'
-
+import { ProductList } from './components/ProductList.jsx'
+import { AddProductForm } from './components/AddProductForm.jsx'
 import './App.css'
 
 const products = [
@@ -14,7 +15,8 @@ function App() {
 
   const handleAddProduct = (newProduct) => {
     setProducts([...products, newProduct])
-  }
+  };  
+
   return (
     <>
       <ProductList products={products}/>

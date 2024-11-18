@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {ProductList} from './ProductList.jsx'
 import {ProductItem} from './ProductItem.jsx'
-import {App} from './App.jsx'
 
 function AddProductForm( {onAddProduct} ) {
     const [name, setName] = useState('');
